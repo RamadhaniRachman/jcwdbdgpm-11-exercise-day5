@@ -57,11 +57,11 @@ function start() {
     useItem(0);
     damage(0, 1);
 
-    if (players[1][1] <= 0) break;
-
     showStatus(players[1]);
     useItem(1);
     damage(1, 0);
+
+    if (players[0][1] <= 0 || players[1][1] <= 0) break;
   }
 
   if (players[0][1] > 0) {
